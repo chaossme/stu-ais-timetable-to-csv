@@ -68,7 +68,14 @@ for (var i = 1; i < 6; i++) {
 
 		for (var k = 0; k < tt.length; k++) {
 			var subject = tt[k];
-			rows.push([subject.name, subject.description, date, subject.startTime, date, subject.endTime]
+			rows.push([
+					`[${subject.isLecture ? 'p' : 'c'}] ` + subject.name,
+					subject.description,
+					date,
+					subject.startTime,
+					date,
+					subject.endTime
+				]
 				.map(function (item) {
 					return '"' + item + '"';
 				})
