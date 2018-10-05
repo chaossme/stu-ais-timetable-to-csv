@@ -56,8 +56,8 @@ for (var i = 0; i < entries.length; i++) {
 
 var rows = ['Subject,Description,Start Date,Start Time,End Date,End Time'];
 
-var startDate = '09/07/2018'// prompt('Zadaj začiatok semestra (MM/DD/YYYY):')
-var endDate = '12/24/2018'// prompt('Zadaj koniec semestra (MM/DD/YYYY):')
+var startDate = prompt('Zadaj začiatok semestra (MM/DD/YYYY):')
+var endDate = prompt('Zadaj koniec semestra (MM/DD/YYYY):')
 
 for (var i = 1; i < 6; i++) {
 	var dates = getDaysBetweenDates(new Date(startDate), new Date(endDate), i);
